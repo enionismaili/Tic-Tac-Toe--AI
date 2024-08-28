@@ -121,11 +121,10 @@ class TicTacToeGUI:
                     self.end_game(f"AI wins!")
                 elif not self.empty_squares():
                     self.ties += 1
-                    self.endv_game("It's a tie!")
+                    self.end_game("It's a tie!")
                 else:
                     self.current_player = self.human_player
                     self.info_label.config(text="Your Turn!")
-
 
 
     def make_move(self, square, letter):
